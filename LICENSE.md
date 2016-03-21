@@ -29,7 +29,7 @@ Files:
 
 Retrieved from http://jquery.org as `v2.2.2`.
 
-Copyright (c) jQuery Foundation. Licensed under the [jQuery License](http://jquery.org/license).
+Copyright (c) jQuery Foundation. Licensed under the [MIT license](http://jquery.org/license).
 Distributed without modifications.
 
 # Moment.js
