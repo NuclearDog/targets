@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Targets</title>
+
+		<link rel="stylesheet" type="text/css" href="assets/css/targets.css">
+	</head>
+	<body>
+
+		<main>
+
+			<div class="page page-trips" data-id="Trips">
+				<h1>Trips</h1>
+
+				<ul id="trips">
+				</ul>
+
+				<form><select id="Location" required></select><input type="text" id="Date" class="date-picker" placeholder="Select date" required><button id="AddTrip">+</button></form>
+
+				<script type="text/x-template" data-id="Trip">
+					<li class="trip"><span class="date"></span><button class="delete">[X]</button></li>
+				</script>
+
+			</div>
+
+			<div class="page page-targetlist" data-id="TargetList">
+				<h1>Targets</h1>
+
+				<ul id="targets">
+				</ul>
+
+				<form><select id="TargetType"></select><input type="text" id="Distance" placeholder="Distance (m)"><input type="number" min="1" step="1" id="Sequence" placeholder="Sequence"><button id="AddTarget">+</button></form>
+
+				<script type="text/x-template" data-id="Target">
+					<li class="target"><span class="sequence"></span> <span class="distance"></span> <button class="delete">[X]</button></li>
+				</script>
+			</div>
+
+			<div class="page page-target" data-id="Target">
+			
+				<div class="controls">
+					<button class="brush selected" data-brush="null">Nothing</button>
+					<button class="brush" data-brush="add">Add</button>
+					<button class="brush" data-brush="subtract">Remove</button>
+				</div>
+
+				<img id="Target">
+
+				<script type="text/x-template" data-id="Shot">
+					<div class="shot"></div>
+				</script>
+
+			</div>
+
+		</main>
+
+		<script type="text/javascript" src="assets/js/vend/jquery-2.2.2.min.js"></script>
+		<script type="text/javascript" src="assets/js/targets.min.js"></script>
+	</body>
+</html>

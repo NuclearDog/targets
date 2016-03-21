@@ -1,0 +1,105 @@
+@import "reset";
+@import "vend/picker/default.css";
+@import "vend/picker/default.date.css";
+@import "vend/picker/default.time.css";
+
+html, body {
+	color: #444;
+	background: #eee;
+	font-family: sans-serif;
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 160%;
+	margin-bottom: 1.6em;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.page {
+	position: relative;
+}
+
+.page-trips {
+
+	ul#trips {
+		border-top: 2px solid #444;
+		border-bottom: 2px solid #444;
+		padding: 0.2em 0;
+	}
+
+	form {
+		text-align: right;
+
+		input.date-picker {
+			margin: 0 0.2em;
+			text-align: right;
+			color: #444;
+			background: transparent;
+			border: 0;
+
+		}
+	}
+
+}
+
+.page-targetlist {
+
+	ul#targets {
+		border-top: 2px solid #444;
+		border-bottom: 2px solid #444;
+		padding: 0.2em 0;
+	}
+
+	form {
+		text-align: right;
+
+		input.date-picker {
+			margin: 0 0.2em;
+			text-align: right;
+			color: #444;
+			background: transparent;
+			border: 0;
+
+		}
+	}
+
+}
+
+.page-target {
+
+	img#Target {
+		min-width: 100%;
+		max-width: 100%;
+	}
+
+	.shot {
+		display: block;
+		position: absolute;
+		background-image: url('../img/bullet.png');
+		background-size: cover;
+	}
+
+	.controls {
+		background: #fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		button {
+			padding: 0.5em;
+		}
+		
+		button.selected {
+			background: #ccc;
+		}
+	}
+
+}
